@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñadores Gráficos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Quattrocento Sans', sans-serif; 
+            text-transform: uppercase;
+            color: var(--verde);
+            margin: 20px;
+        }
+        :root {
+            --azulverdoso: #428077;
+            --carne: #e0e0cf;
+            --azul: #b1e2da; 
+            --PlayfairDisplay: 'PlayfairDisplay', serif;
+            --QuattrocentoSans: 'Quattrocento Sans', sans-serif;
+        }
+        .container{
+            padding:0 2em;
+        }
+        /*HEADER*/
+        body>header{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            height: 100vh;
+            background-color: var(--azulverdoso);
+        }
+        h1{
+            font-family: 'Halant', serif; 
+            font-weight: 700;
+            color: var(--azul);
+            font-size: 2.5em;
+        }
+        h2{
+            font-family: var(--QuattrocentoSans);
+            font-weight: 400;
+            font-size: 1.2em;
+            color: var(--carne);
+        }
+        h3{
+            font-family: var(--QuattrocentoSans);
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1em;
+        }
+        nav a{
+            font-size: 0.75em;
+        }
+        /*MAIN DISEÑOS*/
+        #diseñadores{
+            background-color: var(--carne)
+        }
+        section:first-child .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section:first-child h2{
+            color: var(--azulverdoso);
+            font-family: var(--PlayfairDisplay);
+        }
+        .diseñadores_tipos{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 0.75em;
+            padding: 0.25em;
+            align-items: center;
+            width: 300px;
+        }
+        .diseñadores_img{
+            width: 250px;
+            height: 250px;
+        }
+        .diseñadores_img img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 250px;
+            box-shadow: rgb(83, 155, 139) 0px 0px 25px;
+        }
+        .diseñadores_tipos header{
+            text-align: center;
+            margin-top: 0.75em;
+        }
+        .diseñadores_tipos header h3{
+            color: black;
+        }
+        .diseñadores_tipos header blockquote{
+            font-family: var(--QuattrocentoSans);
+            font-size: 0.5em;
+        }
+        /*SECTION DISEÑOS*/
+        section{
+            padding: 1em;
+        }
+        #diseño{
+            padding: 1.75em;
+        }
+        #diseños .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        section:last-child{
+            height: 100%;
+            background-color: var(--azulverdoso);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        section:last-child h2{
+            color: var(--carne);
+            font-family: var(--PlayfairDisplay);
+        }
+        .diseño{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 1;
+            max-width: 800px;
+            min-width: 250px;
+            min-height: 350px;
+            padding: 0.5em;
+            margin: 0.3em;
+            background-color: white;
+        }
+        .diseño_img{
+            display: flex;
+            width: 100%;
+            height: 250px;
+        }
+        .diseño .diseño_img img{
+            object-fit: cover;
+            flex-grow: 1;
+            object-position: center;
+        }
+        .diseño header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        .diseño h3{
+            font-size: 1em;
+            font-family: var(--QuattrocentoSans);
+        }
+        /*FOOTER*/
+        footer{
+            height: 25vh;
+            padding: 1em;
+        }
+        footer h3{
+            font-weight: 100;
+            text-align: left;
+            font-size: 1em;
+            font-family: var(--PlayfairDisplay);
+            color: var(--azulverdoso);
+        }
+        footer .container{
+            margin-top: 0.75em;
+            display: flex;
+            justify-content: flex-start;
+        }
+        footer p{
+            width: 15%;
+        }
+        footer p:last-child{
+            width: 50%;
+            text-align: right;
+        }
+        footer p a{
+            font-size: 00.4em;
+            font-family: var(--QuattrocentoSans);
+            text-transform: capitalize;
+        }
+        @media (max-width:550px){
+            html{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"> 
+        <hgroup>
+            <h1>Diseñadores Gráficos</h1>
+            <h2>Diseños a lo largo de su carrera</h2>
+        </hgroup>
+        <nav>
+            <a href="#diseñadores">diseñadores</a>
+            <a href="#diseños">diseños</a>
+            <a href="#rrss">redes sociales</a>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="diseñadores">
+            <h2>Diseñadores</h2>
+            <div class="container">
+                <div class="diseñadores_tipos">
+                    <div class="diseñadores_img">
+                        <img src="img/diseñadores/AlexTrochut_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Alex Trochut</h3>
+                        <blockquote>
+                            Si tienes muchas ganas lo puedes conseguir todo
+                        </blockquote>
+                    </header>
+                </div>
+                <div class="diseñadores_tipos">
+                    <div class="diseñadores_img">
+                        <img src="img/diseñadores/Jessica Walsh_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Jessica Walsh</h3>
+                        <blockquote>
+                            "Haz una mierda menos bonita. Haz más cosas con corazón, alma y voz"
+                        </blockquote>
+                    </header>
+                </div>
+                <div class="diseñadores_tipos">
+                    <div class="diseñadores_img">
+                        <img src="img/diseñadores/Noma Bar3_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Noma Bar</h3>
+                        <blockquote>
+                            "Leo mucho, después pienso y hago un gran número de bocetos. Nunca voy al ordenador si no tengo ideas antes"
+                        </blockquote>
+                    </header>
+                </div>
+            </div>
+        </section>
+        <section id="diseños">
+            <h2>Diseños</h2>
+            <div class="container">
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/AlexTrochut1_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Alex Trochut</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/AlexTrochut2_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Alex Trochut</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/AlexTrochut3_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Alex Trochut</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/AlexTrochut4_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Alex Trochut</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Jessica Walsh5_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Jessica Walsh</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Jessica Walsh3.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Jessica Walsh</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Jessica Walsh4_img.jpg" alt="">
+                    </div>
+                    <h3>Jessica Walsh</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Jessica Walsh1_img.png" alt="">
+                    </div>
+                    <header>
+                        <h3>Jessica Walsh</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Noma Bar2_img.png" alt="">
+                    </div>
+                    <header>
+                        <h3>Noma Bar</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/Noma Bar_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Noma Bar</h3>
+                    </header>
+                </div>
+                <div class="diseño">
+                    <div class="diseño_img">
+                        <img src="img/NomaBar4_img.jpg" alt="">
+                    </div>
+                    <header>
+                        <h3>Noma Bar</h3>
+                    </header>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="rrss">
+        <h3>Redes Sociales</h3>
+        <div class="container">
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">E-mail</a></p>
+        </div>
+    </footer>
+</body>
+</html>
